@@ -9,13 +9,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Azure OpenAI Configuration
-os.environ["OPENAI_API_KEY"] = ""
-os.environ["OPENAI_API_BASE"] = "https://mansai.openai.azure.com/"
-os.environ["OPENAI_API_TYPE"] = "azure"
-os.environ["OPENAI_API_VERSION"] = "2023-06-01-preview"
+os.environ["OPENAI_API_KEY"] = "Add your OPENAI API Key"
+os.environ["OPENAI_API_BASE"] = "Add endpoint or base"
+os.environ["OPENAI_API_TYPE"] = "add type"
+os.environ["OPENAI_API_VERSION"] = "Add Version"
 
 openai_model = AzureChatOpenAI(
-    deployment_name="gpt-4",
+    deployment_name="Write you model name",
     temperature=0.9
 )
 
